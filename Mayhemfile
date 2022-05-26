@@ -1,0 +1,5 @@
+project: rnshah9/mdp
+target: mdp
+
+cmds:
+  - cmd: /repo/mdp -
