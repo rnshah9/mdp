@@ -2,4 +2,4 @@ project: mdp
 target: mdp
 
 cmds:
-  - cmd: /repo/mdp -
+  - cmd: /mdp -
