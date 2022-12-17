@@ -16,7 +16,9 @@ typedef struct _cstring_t {
 } cstring_t;
 
 extern "C" cstring_t* cstring_init();
+
 extern "C" void cstring_delete(cstring_t *self);
+
 extern "C" void cstring_expand(cstring_t *self, wchar_t x);
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size)

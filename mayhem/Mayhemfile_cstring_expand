@@ -1,7 +1,6 @@
 project: mdp
-target: mdp2
+target: cstring-expand
 
 cmds:
-  # - cmd: /mdp -
-  - cmd: /fuzz
-image: ghcr.io/rnshah9/playground:mdp
+  - cmd: /fuzz_cstring_expand
+    libfuzzer: true

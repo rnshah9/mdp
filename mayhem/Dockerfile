@@ -6,8 +6,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential libncurses
 COPY . /repo
 WORKDIR /repo
 RUN make -j8
-RUN clang++ /repo/mayhem/fuzz.cpp -fsanitize=fuzzer,address /repo/src/cstring.o -o /fuzz
+RUN clang++ /repo/mayhem/fuzz_cstring_expand.cpp -fsanitize=fuzzer,address /repo/src/cstring.o -o /fuzz
 
 FROM ubuntu:22.04 as package
 COPY --from=builder /repo/mdp /
-COPY --from=builder /fuzz /fuzz
+COPY --from=builder /fuzz /fuzz_cstring_expand
