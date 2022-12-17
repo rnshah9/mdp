@@ -1,0 +1,7 @@
+project: mdp
+target: mdp2
+
+cmds:
+  # - cmd: /mdp -
+  - cmd: /fuzz
+image: ghcr.io/rnshah9/playground:mdp

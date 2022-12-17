@@ -1,5 +1,0 @@
-project: mdp
-target: mdp
-
-cmds:
-  - cmd: /mdp -
